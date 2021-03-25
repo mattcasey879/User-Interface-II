@@ -632,6 +632,23 @@ template {
 
 
 }
+
+@media only screen and (max-width: 500px){
+  .container{
+    width:99%;
+    font-size: 62.5%;
+  }
+
+  .container #galaxy-pic nav{
+    padding-bottom: 10%;
+  }
+  
+  
+  .container #galaxy-pic nav h2{
+    text-align: center;
+    padding-left: 0;
+  }
+}
   
 
 
