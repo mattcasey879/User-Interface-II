@@ -358,7 +358,6 @@ template {
     font-size: 62.5%;
     color: white;
     font-family: Della Respira;
-    max-width: 100%;
   }
   @font-face{
     font-family: rocket-league;
@@ -384,9 +383,7 @@ template {
   .container{
       background-color:rgb(0, 0, 0);
       background-size:cover;
-      width: 99%;
   }
-
   header h1{
     font-family: Della Respira, sans-serif;
     font-size: 4rem;
@@ -396,11 +393,10 @@ template {
 
   nav{
     display:flex;
-    flex-wrap: wrap;
     font-size:3rem;
     margin-left:8rem;
-    margin-bottom: 1em;
-    align-items: center;
+    margin-bottom:1rem;
+    align-items:center;
     justify-content: center;
     width: 90%;
   }
@@ -410,11 +406,13 @@ template {
     background-color:black;
     text-decoration: none;
     color: white;
+    font-size: 2.5rem;
     width:20rem;
-    height: 3rem;
-    padding-top: .75rem;
+    height: 2em;
+    padding-top: 2rem;
     text-align: center;
     font-family: Della Respira, sans-serif;
+    font-family: Della Respira;
     animation: pulsenav 7s infinite;
   }
 
@@ -424,11 +422,8 @@ template {
     font-size: 25px;
     font-family: Della Respira sans-serif;
     font-style:italic;
-    text-decoration:underline;
-    width: 15%;
-
-
- }
+    width: 15%;         
+}
 
   #galaxy-pic{
     background: url(https://scx2.b-cdn.net/gfx/news/hires/2019/galaxy.jpg);
@@ -448,8 +443,9 @@ template {
   #my-picture{
     border-radius:20%;
     border: ridge white;
-    width: 40%;
     height: 40%;
+    width: 40%;
+    margin-left: 2%;
 
   }
 
@@ -462,6 +458,10 @@ template {
    letter-spacing:2px
   }
 
+  #about-me .align-for-mobile h2{
+    font-size: 200%;
+  }
+
   #intro button{
     background-color: #6838d9;
     color: black;
@@ -471,9 +471,6 @@ template {
     font-size: 20px;
     font-family: Della Respira, sans-serif;  }
 
-  .img-sizing{
-    padding: 100px 0;
-  }
 
   .bottom-content{
     display:flex;
@@ -481,11 +478,10 @@ template {
     width: 95%;
   }
 
-
   #middle-title{
     text-align: center;
     padding-top: 4%;
-    border-top: solid 4px;
+    border-top: dashed 4px;
     font-size: 2.5rem;
     letter-spacing: 2px;
     font-family: Della Respira, sans-serif;
@@ -495,12 +491,14 @@ template {
   .img-spacing{
     display:flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .img-spacing img{
     width: 300px;
     height: 200px;
     border: solid #6838d9 10px;
+    margin: 5%
   }
 
   .img-sizing .img-spacing section div{
@@ -551,69 +549,93 @@ template {
     margin-bottom: 20px;
   }
 
-  @media only screen and (max-width: 800px){
-      .container:{
-        width:99%;
-        font-size: 62.5%;
-      }
+  @media only screen and (max-width: 800px){  
+    .container{
+      width:99%;
+      font-size: 62.5%;
     }
 
-    header h1{
-      font-family: Della Respira, sans-serif;
-      font-size: 4rem;
-      margin-left:3rem;
-      color:white;
-      text-align: center;
+    #galaxy-pic{
+      height: 35%;
     }
   
-    nav{
-      display:flex;
-      flex-flow: column wrap;
-      font-size:3rem;
-      margin-left:6rem;
-      margin-bottom: 1em;
-      align-items: center;
-      justify-content: center;
-      width: 90%;
-    }
-  
-    nav a{
-      border:#6838d9 solid;
-      background-color:black;
-      text-decoration: none;
-      color: white;
-      width:20rem;
-      height: 3rem;
-      padding-top: .75rem;
-      text-align: center;
-      font-family: Della Respira, sans-serif;
-      animation: pulsenav 7s infinite;
-    }
-  
-    nav h2{
-      color:#6838d9;
-      padding-left: 80%;
-      font-size: 25px;
-      font-family: Della Respira sans-serif;
-      font-style:italic;
-      text-decoration: none;
-      width: 15%;
-  
-  
-   }
-   #intro{
+
+  header h1{
+    font-family: Della Respira, sans-serif;
+    font-size: 4rem;
+    margin-left:3rem;
+    color:white;
+    text-align: center;
+  }
+
+  nav{
     display:flex;
-    flex-flow: column;
+    flex-flow: column wrap;
+    font-size:3rem;
+    margin-left:6rem;
+    margin-bottom: 1em;
     align-items: center;
-    margin-top: 15%;
-    margin-left: auto;
-    padding-bottom: 80px;
+    justify-content: center;
+    width: 90%;
   }
 
-  #intro img{
-
+  nav a{
+    border:#6838d9 solid;
+    background-color:black;
+    text-decoration: none;
+    color: white;
+    width:20rem;
+    height: 3rem;
+    padding-top: .75rem;
+    text-align: center;
+    font-family: Della Respira, sans-serif;
+    animation: pulsenav 7s infinite;
   }
 
+  nav h2{
+    color:#6838d9;
+    padding-left: 80%;
+    font-size: 25px;
+    font-family: Della Respira sans-serif;
+    font-style:italic;
+    text-decoration: none;
+    width: 15%;
+
+
+ }
+ #intro{
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 15%;
+  padding-bottom: 80px;
+  justify-content: center;
+  align-content: center;
+}
+
+#about-me .align-for-mobile{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#intro img{
+  margin-left: 14%
+}
+
+.img-sizing .img-spacing{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  
+}
+
+
+}
+  
+
+
+    
 
 
 
