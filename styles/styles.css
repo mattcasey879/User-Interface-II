@@ -506,9 +506,6 @@ template {
     font-size: 30px;
   }
 
-  .img-sizing .img-spacing #boys{
-    height: 300px;
-  }
 
 
   .img-sizing .img-spacing #yosemite{
@@ -556,7 +553,7 @@ template {
     }
 
     #galaxy-pic{
-      height: 35%;
+      height: 40%;
     }
   
 
@@ -568,15 +565,15 @@ template {
     text-align: center;
   }
 
-  nav{
+  #galaxy-pic nav{
     display:flex;
     flex-flow: column wrap;
     font-size:3rem;
-    margin-left:6rem;
-    margin-bottom: 1em;
+    margin:0 0 0 0;
+    margin-bottom: 
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 90%
   }
 
   nav a{
@@ -613,6 +610,15 @@ template {
   align-content: center;
 }
 
+#intro #my-picture{
+  margin: 0 0 0 0;
+}
+
+#about-me{
+  text-align: center;
+  padding: 0 10%
+}
+
 #about-me .align-for-mobile{
   display: flex;
   flex-flow: column;
@@ -635,18 +641,26 @@ template {
 
 @media only screen and (max-width: 500px){
   .container{
-    width:99%;
+  
     font-size: 62.5%;
   }
 
-  .container #galaxy-pic nav{
-    padding-bottom: 10%;
+  .container #galaxy-pic{
+   display: flex;
+   flex-flow: column;
+   height:60%
   }
   
   
   .container #galaxy-pic nav h2{
     text-align: center;
     padding-left: 0;
+  }
+
+  #intro{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
   }
 }
   
