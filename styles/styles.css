@@ -435,27 +435,21 @@ template {
   #intro{
     display:flex;
     margin-top: 2%;
-    margin-left: auto;
     padding-bottom: 80px;
     align-items: center;
-    background-color: 
-
-
   }
 
-  #about-me{
-   box-sizing: border-box;
+  #about-me h2{
+    font-size: 3rem;
+  }
+
+  #intro #about-me{
    font-size: 3.3rem;
-   padding-left: 125px;
    font-family: monospace;
    letter-spacing:3px;
-   line-height:3.5rem
+   line-height:3.5rem;
+   padding-left: 6%;
   }
-
-  #about-me .align-for-mobile h2{
-    font-size: 200%;
-  }
-
   #intro button{
     background-color: #6838d9;
     color: black;
@@ -465,7 +459,10 @@ template {
     font-size: 20px;
     font-family: Della Respira, sans-serif;  }
 
-
+  #social-nav nav i{
+   font-size: 4rem;
+   padding: 5%;
+ }
 
 
   #middle-title{
@@ -515,53 +512,11 @@ template {
     font-family: rocket-league;
   }
 
-  footer section{
-    text-align:center;
-    font-size:6rem;
-
-  }
-  footer section div button{
-    background-color: aqua
-  }
-
-  footer section h2{
-    font-size:50px;
-  }
-
-  footer section div a{
-    color: #6838d9;
-    text-decoration: none;
-    font-size:60px;
-    padding:15px;
-    font-weight: bold;
-  }
-
-  footer .social-nav{
-    display: flex;
-    justify-content: center;
-    padding: 2% 0;
-  }
-
-  footer .social-nav a{
-    padding: 0 3%;
-    font-size: 12rem;
-  }
-
-  
-
-
-
-
   @media only screen and (max-width: 800px){  
     .container{
       width:99%;
       font-size: 62.5%;
     }
-
-    #galaxy-pic{
-      height: 40%;
-    }
-  
 
   header h1{
     font-family: Della Respira, sans-serif;
