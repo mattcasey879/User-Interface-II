@@ -471,18 +471,22 @@ template {
     font-size: 20px;
     font-family: Della Respira, sans-serif;  }
 
+
   i{
    font-size: 4rem;
    padding: 5%;
- }
-i:hover{
-   text-align: center;
-   width: 60px;
-   background-color: grey;
-   padding-left: 10%;
-   -webkit-transition: .7s ease-in
- }
- 
+   width:100%;
+   transition: ease-out 700ms;
+   text-align:center;
+  }
+
+  i:hover{
+    text-align: center;
+    width: 100%;
+    background-color: grey;
+    font-size: 4.5rem;
+    transition: all 500ms;
+  }
 
   #middle-title{
     text-align: center;
