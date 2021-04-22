@@ -363,8 +363,9 @@ template {
     font-family: Della Respira;
   }
   @font-face{
+    src: url(assets/jost-800-heavy-webfont.woff);
     font-family: rocket-league;
-    src: url(jost-800-heavy-webfont.woff);
+    
   }
 
   @keyframes pulsenav {
@@ -381,6 +382,13 @@ template {
     100%{
       
     }
+  }
+
+  @keyframes social {
+    25% {font-size: 5rem; padding: 1%;};
+    50% {font-size: 6rem; padding: 2%};
+    75% {font-size: 7rem; padding: 3%};
+    100% {font-size: 8rem; padding: 4%};
   }
 
   .container{
@@ -401,11 +409,14 @@ template {
     display:flex;
     font-size:3rem;
     align-items: center;
-    
+    position:fixed;
+    top: 0;
+    padding-left: 3rem;
     width: 100%;
     height: 12rem;
-    background-color: #3A3A3A;
-    background-size: cover
+    background-color: black;
+    border: 3px outset grey;
+
   }
 
   .top-nav a{
@@ -434,9 +445,10 @@ template {
 
   #intro{
     display:flex;
-    margin-top: 2%;
+    margin-top: 10%;
     padding-bottom: 80px;
     align-items: center;
+    height: 40rem;
   }
 
   #about-me h2{
@@ -459,11 +471,18 @@ template {
     font-size: 20px;
     font-family: Della Respira, sans-serif;  }
 
-  #social-nav nav i{
+  i{
    font-size: 4rem;
    padding: 5%;
  }
-
+i:hover{
+   text-align: center;
+   width: 60px;
+   background-color: grey;
+   padding-left: 10%;
+   -webkit-transition: .7s ease-in
+ }
+ 
 
   #middle-title{
     text-align: center;
@@ -509,7 +528,7 @@ template {
 
   .img-sizing .img-spacing #rl span{
     font-size: 35px;
-    font-family: rocket-league;
+    font-family: rocket-leauge;
   }
 
   @media only screen and (max-width: 800px){  
